@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <script>
+
+        function abdullah(){
+            let USD = +document.getElementById("USD").value;
+            let SR = +document.getElementById("SAR").value;
+
+            document.write('1 USD in PKR: 104.80'+'<br>');
+            document.write('1 Saudi Riyal in PKR: 28'+'<br><hr>');
+            document.write('Total Currency in PKR: '+ ((USD*104.80)+(SR*28)));
+            }
+    </script>
+  </head>
+  <body>
+
+    <h1>Currency Converter</h1>
+    <p>Amount In USD: &nbsp;<input id="USD" min="0" type="number" /></p>
+    <p>Amount In Saudi Riyals: &nbsp;<input id="SAR" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Convert</button>
