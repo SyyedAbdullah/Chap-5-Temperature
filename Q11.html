@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <script>
+
+        function abdullah(){
+            let currentYear = +document.getElementById("currentYear").value;
+            let birthYear = +document.getElementById("birthYear").value;
+            let age = currentYear-birthYear
+            document.write('Current Year: '+currentYear+'<br>');
+            document.write('Birth Year: '+birthYear+'<br><hr>');
+            document.write('Your Age is '+ age);
+            }
+    </script>
+  </head>
+  <body>
+
+    <h1>Age Calculator</h1>
+    <p>Current year: &nbsp;<input id="c_year" min="0" type="number" /></p>
+    <p>Actual Birth year: &nbsp;<input id="b_year" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Convert</button>
+
+
+
+
+  </body>
+</html>
