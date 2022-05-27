@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometrizer</title>
+    <script>
+
+        function abdullah(){
+            let radius = +document.getElementById("radius").value;
+            let circumference = (2*3.142*radius)
+            let area = (3.142*(radius^2))
+
+            document.write('Radius of the circle: '+radius+'<br>');
+            document.write('Circumference of the circle: '+circumference+'<br>');
+            document.write('Area of the circle: '+ area);
+            }
+    </script>
+  </head>
+  <body>
+
+    <h1>Geometrizer</h1>
+    <p>Radius: &nbsp;<input id="radius" min="0" type="number" /></p>
+    <button id="click" onclick="abdullah();">Calculate</button>
+
+
+
+
+  </body>
+</html>
